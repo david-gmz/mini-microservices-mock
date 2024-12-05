@@ -1,0 +1,109 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.section {
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 8px;
+    min-width: 300px;
+}
+
+.legend {
+    font-size: x-large;
+    font-weight: 600;
+}
+.form-group {
+    display: flex;
+    gap: 4px;
+    margin: 8px;
+}
+
+.btn.btn-primary {
+    border-radius: 4px;
+    background-color: hsl(200, 59%, 60%);
+    cursor: pointer;
+    padding: 5px;
+    color: antiquewhite;
+}
+
+.fieldset {
+    border: 1px solid #ccc;
+    margin: 15px;
+    background-color: #fff; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, hsl(0 0 100%), yellow);
+}
